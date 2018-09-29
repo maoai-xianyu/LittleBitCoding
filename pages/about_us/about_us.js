@@ -1,4 +1,4 @@
-// pages/buy/buy.js
+// pages/about_us/about_us.js
 Page({
 
   /**
