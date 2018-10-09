@@ -1,0 +1,50 @@
+<!--pages/test/test.wxml-->
+<view>
+  <view>
+    <text>{{content}}</text>
+  </view>
+
+  <view>
+    <text>{{num1}}+{{num2}}= {{num1+num2}}</text>
+  </view>
+
+  <view>
+    <text hidden='{{flag? true:false}}'>{{user.name}} ----- {{user.age}}</text>
+  </view>
+
+  <view>
+    <text wx:if="{{flag}}">flag 为 true 显示 if</text>
+    <text wx:else>flag 为 false 用else</text>
+  </view>
+  <view>
+    <text wx:if="{{num1 > 12}}">num1 大于 12</text>
+    <text wx:elif="{{num1> 2}}">num1 小于等于 12  大于2</text>
+    <text wx:else>小于等于2</text>
+  </view>
+</view>
+
+<!--  block 并不是一个组件，仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性 -->
+<block wx:if="{{flag}}">
+  <view>
+    <text>{{content}}</text>
+  </view>
+  <view>
+    <text>{{content}}</text>
+  </view>
+</block>
+
+<view wx:for="{{test}}">
+  <view>{{index}} ----{{item.username}}</view>
+</view>
+
+<view wx:for="{{test}}" wx:for-index="i" wx:for-item="it">
+  <view>{{i}} ----{{it.username}}-----{{it.age}}</view>
+</view>
+
+<view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+    <view wx:if="{{i<=j}}">
+      {{i}}*{{j}}={{i*j}}
+    </view>
+  </view>
+</view>

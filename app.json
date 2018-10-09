@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/cart/cart",
     "pages/about_us/about_us",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -33,6 +34,12 @@
       {
         "pagePath": "pages/about_us/about_us",
         "text": "我的",
+        "iconPath": "img/tab_about_us_default.png",
+        "selectedIconPath": "img/tab_about_us_select.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
         "iconPath": "img/tab_about_us_default.png",
         "selectedIconPath": "img/tab_about_us_select.png"
       }
