@@ -1,0 +1,9 @@
+<!--pages/module/module.wxml-->
+<template name="module">
+  <view>module import</view>
+  <view>module import</view>
+  <view>module import</view>
+</template>
+
+<view>module include</view>
+<view>module include</view>

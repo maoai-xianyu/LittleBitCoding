@@ -13,11 +13,10 @@ Page({
       name: "囧架架",
       age: 15
     },
-    test:[
-      {
-        username:"日",
-        age:12,
-        sex:"男"
+    test: [{
+        username: "日",
+        age: 12,
+        sex: "男"
       },
       {
         username: "月",
@@ -29,9 +28,17 @@ Page({
         age: 14,
         sex: "男"
       }
-  
-    ]
+    ],
+    name:"yes pa pa"
+  },
 
+  click_click: function (e) {
+    console.log("点击的事件")
+    this.setData({
+      name:"no papa"
+    })
+    console.log(e)
+    console.log(e.currentTarget.id)
   },
 
   /**

@@ -42,9 +42,32 @@
 </view>
 
 <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
-  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+  <view wx:key="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
     <view wx:if="{{i<=j}}">
       {{i}}*{{j}}={{i*j}}
     </view>
   </view>
+</view>
+
+<!-- 模板 -->
+<template name="user_info">
+  <view>
+    {{item.username}}----{{item.age}}----{{item.sex}}
+  </view>
+</template>
+
+<view wx:for="{{test}}">
+  <template is="user_info" data="{{item}}"></template>
+</view>
+
+<import src="../module/module.wxml" />
+<include src="../module/module.wxml" />
+<template is="module" />
+<include src="../module/module.wxml" />
+
+
+<!-- 事件  data-  自定义属性 -->
+<view>
+  <button bindtap='click_click' id='click' data-food='click_food' class='a usermotto'>点击</button>
+  <text style='color:blue'>{{name}}</text>
 </view>

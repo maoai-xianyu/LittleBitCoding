@@ -1,1 +1,9 @@
 /* pages/test/test.wxss */
+@import "../index/index.wxss";
+
+.a {
+ height: 120rpx;
+ width: 480rpx;
+ background: skyblue;
+ color: red;
+}
