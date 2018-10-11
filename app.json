@@ -4,8 +4,9 @@
     "pages/cart/cart",
     "pages/about_us/about_us",
     "pages/logs/logs",
+    "pages/module/module",
     "pages/test/test",
-    "pages/module/module"
+    "pages/y_demo1/y_demo1"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -39,8 +40,8 @@
         "selectedIconPath": "img/tab_about_us_select.png"
       },
       {
-        "pagePath": "pages/test/test",
-        "text": "测试",
+        "pagePath": "pages/y_demo1/y_demo1",
+        "text": "案例",
         "iconPath": "img/tab_about_us_default.png",
         "selectedIconPath": "img/tab_about_us_select.png"
       }

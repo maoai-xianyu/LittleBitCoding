@@ -1,0 +1,14 @@
+<!--pages/y_demo1/y_demo1.wxml-->
+<view>
+  <input bindinput='y_input_name' placeholder='请输入你的名字' placeholder-class='y_form_input'></input>
+  <input bindinput='y_input_chinese' type='digit' placeholder='请输入你的语文成' placeholder-class='y_form_input'></input>
+  <input bindinput='y_input_math' type='digit' placeholder='请输入你的数学成' placeholder-class='y_form_input'></input>
+  <button type='primary' bindtap='y_confirm'>提交</button>
+</view>
+
+<view class='y_content_result' hidden='{{flag}}'>
+  <view class="y_content_result_item">姓名：{{name}}</view>
+  <view class="y_content_result_item">语文成绩：{{chineseScore}}</view>
+  <view class="y_content_result_item">数学成绩：{{mathScore}}</view>
+  <view class="y_content_result_item">平均成绩：{{avg}} </view>
+</view>
