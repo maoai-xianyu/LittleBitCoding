@@ -2,8 +2,34 @@
 @import "../index/index.wxss";
 
 .a {
- height: 120rpx;
- width: 480rpx;
- background: skyblue;
- color: red;
+  height: 120rpx;
+  width: 480rpx;
+  background: skyblue;
+  color: red;
+}
+
+.test_content {
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.test_content_item {
+  width: 230rpx;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.test_content_btn {
+  background: black;
+  color: white;
+}
+
+.test_content_input {
+  height: 20rpx;
+  width: 200rpx;
+  margin: 10rpx;
+  background: skyblue;
 }

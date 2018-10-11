@@ -29,16 +29,28 @@ Page({
         sex: "男"
       }
     ],
-    name:"yes pa pa"
+    name: "yes pa pa",
+    focus_flag: false
   },
 
-  click_click: function (e) {
+  click_click: function(e) {
     console.log("点击的事件")
     this.setData({
-      name:"no papa"
+      name: "no papa"
     })
     console.log(e)
     console.log(e.currentTarget.id)
+  },
+
+  click_focus: function(e) {
+    this.setData({
+      focus_flag: true
+    })
+  },
+
+  click_input: function(e){
+    console.log(e)
+    console.log(e.detail.value)
   },
 
   /**

@@ -71,3 +71,30 @@
   <button bindtap='click_click' id='click' data-food='click_food' class='a usermotto'>点击</button>
   <text style='color:blue'>{{name}}</text>
 </view>
+
+<view class='test_content'>
+  <view class='test_content_item' style='background:skyblue'>1</view>
+  <view class='test_content_item' style='background:blue'>2</view>
+  <view class='test_content_item' style='background:red'>3</view>
+</view>
+
+<!--按钮-->
+<view>
+  <button size='mini' type='primary' disabled='true'>按钮1</button>
+  <button size='mini' plain='true'>按钮2</button>
+  <button size='default' hover-class='test_content_btn'>按钮3</button>
+  <button size='default' loading='true' type='warn'>按钮4</button>
+</view>
+
+<!--input-->
+<view>
+  <input type='text' value='请输入' class='test_content_input' password='tr' />
+  <input type='number' value='请输入' class='test_content_input' />
+  <input type='idcard' value='请输入' class='test_content_input' />
+  <input type='text' placeholder='1222' placeholder-style='color:red' />
+  <input type='text' placeholder='1222' placeholder-style='color:red' focus='{{focus_flag}}' />
+  <button bindtap='click_focus'>focus</button>
+
+  <input value='发送' confirm-type='send'></input>
+  <input value='test' bindinput='click_input'></input>
+</view>
