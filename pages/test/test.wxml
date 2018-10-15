@@ -98,3 +98,25 @@
   <input value='发送' confirm-type='send'></input>
   <input value='test' bindinput='click_input'></input>
 </view>
+
+<!--icon -->
+<block wx:for="{{iconType}}" wx:for-item="item">
+  <block wx:for="{{iconSize}}" wx:for-item="size">
+    <icon type='{{item}}' size='{{size}}'></icon>
+  </block>
+  <view></view>
+</block>
+
+<!-- text -->
+<view>
+  <text selectable='true'>测试</text>
+  <text space='emsp'>    测试空格</text>
+</view>
+
+<!-- slider -->
+<view>
+  <slider min='40' max='200' show-value='true' step="20" backgroundColor='red' activeColor='green'></slider>
+  <slider min='40' max='200' show-value='true' bindchange='slider_change'></slider>
+  <slider min='40' max='200' show-value='true' bindchanging='slider_changing'></slider>
+  <slider min='40' max='200' show-value='true' value='80'></slider>
+</view>

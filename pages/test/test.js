@@ -30,7 +30,9 @@ Page({
       }
     ],
     name: "yes pa pa",
-    focus_flag: false
+    focus_flag: false,
+    iconType: ["success", "success_no_circle", "info", "warn", "waiting", "cancel", "download", "search", "clear"],
+    iconSize: [10, 15, 20, 30, 40]
   },
 
   click_click: function(e) {
@@ -48,9 +50,18 @@ Page({
     })
   },
 
-  click_input: function(e){
-    console.log(e)
-    console.log(e.detail.value)
+  click_input: function(e) {
+    console.log(e);
+    console.log(e.detail.value);
+  },
+
+  slider_change: function(e) {
+    console.log(e);
+    console.log(e.detail.value);
+  },
+
+  slider_changing: function(e) {
+    console.log(e);
   },
 
   /**

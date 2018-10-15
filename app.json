@@ -40,8 +40,8 @@
         "selectedIconPath": "img/tab_about_us_select.png"
       },
       {
-        "pagePath": "pages/y_demo1/y_demo1",
-        "text": "案例",
+        "pagePath": "pages/test/test",
+        "text": "测试",
         "iconPath": "img/tab_about_us_default.png",
         "selectedIconPath": "img/tab_about_us_select.png"
       }
